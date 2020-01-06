@@ -1,0 +1,461 @@
+/*------------------------------------------------------------    Generelle Indstillinger   ---------------------------------------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #F1EEE9;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2.5rem;
+    color: black;
+}
+
+h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2rem;
+    color: black;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-size: 1rem;
+}
+
+a {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: black;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.hide {
+    display: none;
+}
+
+/*--------------------------------------------------------------- Burgermenu  ---------------------------------------------------------------*/
+
+#menuknap {
+    display: inline-block;
+    margin: 2vw;
+    position: relative;
+    left: 85vw;
+    top: 3vw;
+}
+
+header nav {
+    margin: 1vw 3vw 3vw 3.5vw;
+}
+
+nav a {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-radius: 1vw;
+    border-width: thin;
+    padding: 1vw 3.5vw 1vw 3.5vw;
+    margin: auto;
+    color: black;
+    opacity: 80%;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.forside {
+    background-color: aliceblue;
+}
+
+.html {
+    background-color: #D9A036;
+}
+
+.ux {
+    background-color: #D92818;
+}
+
+.animation {
+    background-color: #F2C2C6;
+}
+
+.indhold {
+    background-color: #8487BF;
+}
+
+.cv {
+    background-color: aliceblue;
+}
+
+
+
+/*------------------------------------------------------------   Forside  --------------------------------------------------------------------------*/
+
+
+.splash_web {
+    display: none;
+}
+
+.splash_mobile {
+    display: block;
+}
+
+#splash img {
+    background-size: cover;
+}
+
+/*--------------------------------------------------------------- Grundlæggende HTML  ---------------------------------------------------------------*/
+
+#html {
+    margin-left: 7vw;
+    margin-right: 7vw;
+    margin-bottom: 3vw;
+}
+
+#html .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+#html .col_text {
+    border-radius: 15px;
+    background-color: #D9A036;
+    opacity: 70%;
+    padding: 1vw 1vw 1vw 1vw;
+    flex-basis: 386px;
+    flex-grow: 5;
+}
+
+#html .knap {
+    width: 18rem;
+    height: 3rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    margin: auto;
+    padding: 0.6rem;
+    background-color: #D9A036;
+    opacity: 80%;
+    margin-top: 2vw;
+}
+
+#html .knap:hover {
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1.6vw;
+    opacity: 90%;
+    width: 20rem;
+    height: 4rem;
+}
+
+#html .col_img {
+    flex-basis: 386px;
+    flex-grow: 4;
+}
+
+/*--------------------------------------------------------------- Grundlæggende UX  ---------------------------------------------------------------*/
+
+#ux {
+    margin-left: 7vw;
+    margin-right: 7vw;
+    margin-bottom: 3vw;
+}
+
+#ux .container1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 1vw 0 2vw 0;
+}
+
+#ux .container2 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 1vw 0 1vw 0;
+}
+
+#ux .container3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    margin: 1vw 0 1vw 0;
+}
+
+#ux .col_text {
+    border-radius: 15px;
+    background-color: #D92818;
+    opacity: 60%;
+    padding: 1vw 1vw 1vw 1vw;
+    flex-basis: 386px;
+    flex-grow: 9;
+}
+
+#ux .knap {
+    width: 18rem;
+    height: 3rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    margin: auto;
+    padding: 0.6rem;
+    background-color: #D92818;
+    opacity: 70%;
+    margin-top: 1vw;
+}
+
+#ux .knap:hover {
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1.6vw;
+    opacity: 80%;
+    width: 20rem;
+    height: 4rem;
+}
+
+#ux .col_img {
+    flex-basis: 386px;
+    flex-grow: 1;
+    align-content: center;
+}
+
+/*--------------------------------------------------------------- Animation  ------------------------------------------------------------------------*/
+
+#animation {
+    margin-left: 7vw;
+    margin-right: 7vw;
+    margin-bottom: 3vw;
+}
+
+#animation .container1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 1vw 0 2vw 0;
+}
+
+#animation .container2 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 1vw 0 2vw 0;
+}
+
+#animation .col_text {
+    border-radius: 15px;
+    background-color: #F2C2C6;
+    opacity: 60%;
+    padding: 1vw 1vw 1vw 1vw;
+    flex-basis: 386px;
+    flex-grow: 5;
+}
+
+#animation .col_img {
+    flex-basis: 386px;
+    flex-grow: 5;
+    flex-direction: column;
+    align-content: center;
+}
+
+
+#animation .knap {
+    width: 14rem;
+    height: 3rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    padding: 0.6rem;
+    background-color: #F2C2C6;
+    opacity: 70%;
+    margin: auto;
+    margin-top: 1vw;
+}
+
+#animation .knap:hover {
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1.6vw;
+    opacity: 80%;
+    width: 20rem;
+    height: 4rem;
+}
+
+/*--------------------------------------------------------------- Indhold  ------------------------------------------------------------------------*/
+
+#indhold {
+    margin-left: 7vw;
+    margin-right: 7vw;
+    margin-bottom: 3vw;
+}
+
+#indhold .container1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 1vw 0 2vw 0;
+}
+
+#indhold .container2 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 1vw 0 2vw 0;
+}
+
+#indhold .col_text {
+    border-radius: 15px;
+    background-color: #8487BF;
+    opacity: 60%;
+    padding: 1vw 1vw 1vw 1vw;
+    flex-basis: 386px;
+    flex-grow: 2;
+}
+
+#indhold .col_img {
+    flex-basis: 386px;
+    flex-grow: 3;
+    flex-direction: column;
+    align-content: center;
+}
+
+
+#indhold .knap {
+    width: 14rem;
+    height: 3rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    margin: auto;
+    padding: 0.6rem;
+    background-color: #8487BF;
+    opacity: 70%;
+    margin-top: 1vw;
+}
+
+#indhold .knap:hover {
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1.6vw;
+    opacity: 80%;
+    width: 20rem;
+    height: 4rem;
+}
+
+
+/*
+video {
+    width: 100%;
+    margin-top: 1vw;
+}
+*/
+
+
+
+/*--------------------------------------------------------------- Mediaquery Desktop  ---------------------------------------------------------------*/
+
+@media only screen and (min-width:900px) {
+
+    .splash_web {
+        display: block;
+        background-size: cover;
+    }
+
+    .splash_mobile {
+        display: none;
+    }
+
+    #splash img {
+        width: 90%;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    header {
+        margin: 0 2vw 0 2vw;
+    }
+
+    nav a {
+        font-family: 'Open Sans Condensed', sans-serif;
+        text-decoration: none;
+        font-size: 1.5vw;
+        border-radius: 1vw;
+        border-width: thin;
+        padding: 1vw 3.5vw 1vw 3.5vw;
+        margin: auto;
+        color: black;
+        opacity: 80%;
+        display: inline-block;
+        ;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .forside {
+        flex-grow: 1;
+    }
+
+    .html {
+        flex-grow: 1;
+    }
+
+    .ux {
+        flex-grow: 1;
+    }
+
+    .animation {
+        flex-grow: 1;
+    }
+
+    .indhold {
+        flex-grow: 1;
+    }
+
+    .cv {
+        flex-grow: 1;
+    }
+
+    nav a:hover {
+        text-decoration: none;
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 1.7vw;
+        opacity: 90%;
+    }
+
+    #menuknap {
+        display: none;
+    }
+
+    /*
+    video {
+        margin-left: 1vw;
+    }
+*/
+
+    .knap_row {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
