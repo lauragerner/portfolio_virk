@@ -46,6 +46,10 @@ a {
     display: none;
 }
 
+.hidden {
+    transform: scale(0);
+}
+
 #html,
 #cv,
 #ux,
@@ -54,6 +58,16 @@ a {
     margin-left: 7vw;
     margin-right: 7vw;
     margin-bottom: 3vw;
+}
+
+footer {
+    line-height: 2vw;
+    background-color: aliceblue;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: black;
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
 }
 
 /*--------------------------------------------------------------- Burgermenu  ---------------------------------------------------------------*/
@@ -108,6 +122,7 @@ nav a {
     background-color: aliceblue;
 }
 
+/*
 .slider {
     animation-name: slider_kf;
     animation-duration: 1s;
@@ -125,6 +140,7 @@ nav a {
     }
 }
 
+*/
 
 
 
@@ -195,8 +211,8 @@ nav a {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: flex-start;
     margin: 1vw 0 2vw 0;
+    align-items: center;
 }
 
 #ux .container2 {
@@ -204,16 +220,10 @@ nav a {
     flex-wrap: wrap-reverse;
     flex-direction: row;
     align-items: flex-start;
-    margin: 1vw 0 1vw 0;
-}
-
-#ux .container3 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
     align-items: center;
     margin: 1vw 0 1vw 0;
 }
+
 
 #ux .col_text {
     border-radius: 15px;
@@ -383,6 +393,14 @@ video {
     margin: 1vw 0 2vw 0;
 }
 
+#cv .container2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 1vw 0 2vw 0;
+}
+
 #cv .col_text {
     border-radius: 15px;
     background-color: aliceblue;
@@ -394,26 +412,49 @@ video {
 
 #cv .col_img {
     flex-basis: 386px;
-    flex-grow: 3;
+    flex-grow: 4;
     flex-direction: column;
     align-content: center;
 }
 
-#cv img {
+#cv .container img {
     border-radius: 15px;
-    margin-left: 1.5vw;
-    width: 90%;
+    margin-top: 2vw;
+    width: 100%;
 }
 
+.cv_web {
+    display: none;
+}
+
+.cv_mobile {
+    display: block;
+}
+
+
+/*
 #cv .tavle_skole {
     border-radius: 5vw;
-    border-color: #8487BF;
-    color: #8487BF;
+    background-color: #8487BF;
     width: 2vw;
     height: 2vw;
-    top: 12vw;
-    left: 5vw;
+    top: 60vw;
+    left: 16vw;
+    position: absolute;
 }
+
+#cv .tavle_skole:hover {
+    display: none;
+}
+
+#cv .tavle_text {
+    width: 12vw;
+    height: 2vw;
+    top: 60vw;
+    left: 24vw;
+    position: absolute;
+}
+*/
 
 /*--------------------------------------------------------------- Mediaquery Desktop  ---------------------------------------------------------------*/
 
@@ -441,17 +482,8 @@ video {
     }
 
     nav a {
-        font-family: 'Open Sans Condensed', sans-serif;
-        text-decoration: none;
         font-size: 1.5vw;
-        border-radius: 1vw;
-        border-width: thin;
-        padding: 1vw 3.5vw 1vw 3.5vw;
-        margin: auto;
-        color: black;
-        opacity: 80%;
         display: inline-block;
-        ;
     }
 
     nav {
@@ -506,4 +538,18 @@ video {
         display: flex;
         justify-content: space-evenly;
     }
+
+    .cv_web {
+        display: block;
+        background-size: cover;
+    }
+
+    .cv_mobile {
+        display: none;
+    }
+
+    #cv .container img {
+        margin: 0vw 0vw 0 1vw;
+    }
+
 }
