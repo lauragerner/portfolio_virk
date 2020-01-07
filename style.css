@@ -46,6 +46,16 @@ a {
     display: none;
 }
 
+#html,
+#cv,
+#ux,
+#animation,
+#indhold {
+    margin-left: 7vw;
+    margin-right: 7vw;
+    margin-bottom: 3vw;
+}
+
 /*--------------------------------------------------------------- Burgermenu  ---------------------------------------------------------------*/
 
 #menuknap {
@@ -98,6 +108,24 @@ nav a {
     background-color: aliceblue;
 }
 
+.slider {
+    animation-name: slider_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes slider_kf {
+    from {
+        transform: translateX(30vw);
+    }
+
+    to {
+        transform: translateX(0vw);
+    }
+}
+
+
 
 
 /*------------------------------------------------------------   Forside  --------------------------------------------------------------------------*/
@@ -117,11 +145,6 @@ nav a {
 
 /*--------------------------------------------------------------- Grundlæggende HTML  ---------------------------------------------------------------*/
 
-#html {
-    margin-left: 7vw;
-    margin-right: 7vw;
-    margin-bottom: 3vw;
-}
 
 #html .container {
     display: flex;
@@ -167,11 +190,6 @@ nav a {
 
 /*--------------------------------------------------------------- Grundlæggende UX  ---------------------------------------------------------------*/
 
-#ux {
-    margin-left: 7vw;
-    margin-right: 7vw;
-    margin-bottom: 3vw;
-}
 
 #ux .container1 {
     display: flex;
@@ -235,11 +253,6 @@ nav a {
 
 /*--------------------------------------------------------------- Animation  ------------------------------------------------------------------------*/
 
-#animation {
-    margin-left: 7vw;
-    margin-right: 7vw;
-    margin-bottom: 3vw;
-}
 
 #animation .container1 {
     display: flex;
@@ -297,11 +310,6 @@ nav a {
 
 /*--------------------------------------------------------------- Indhold  ------------------------------------------------------------------------*/
 
-#indhold {
-    margin-left: 7vw;
-    margin-right: 7vw;
-    margin-bottom: 3vw;
-}
 
 #indhold .container1 {
     display: flex;
@@ -357,7 +365,6 @@ nav a {
     height: 4rem;
 }
 
-
 /*
 video {
     width: 100%;
@@ -365,7 +372,48 @@ video {
 }
 */
 
+/*------------------------------------------------------------------   CV   -------------------------------------------------------------------------*/
 
+
+#cv .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 1vw 0 2vw 0;
+}
+
+#cv .col_text {
+    border-radius: 15px;
+    background-color: aliceblue;
+    opacity: 60%;
+    padding: 1vw 1vw 1vw 1vw;
+    flex-basis: 386px;
+    flex-grow: 2;
+}
+
+#cv .col_img {
+    flex-basis: 386px;
+    flex-grow: 3;
+    flex-direction: column;
+    align-content: center;
+}
+
+#cv img {
+    border-radius: 15px;
+    margin-left: 1.5vw;
+    width: 90%;
+}
+
+#cv .tavle_skole {
+    border-radius: 5vw;
+    border-color: #8487BF;
+    color: #8487BF;
+    width: 2vw;
+    height: 2vw;
+    top: 12vw;
+    left: 5vw;
+}
 
 /*--------------------------------------------------------------- Mediaquery Desktop  ---------------------------------------------------------------*/
 
